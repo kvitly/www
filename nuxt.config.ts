@@ -7,4 +7,7 @@ export default defineNuxtConfig({
         extractCSS: true,
         transpile: ['@headlessui/vue'],
     },
+    app: {
+        baseURL: '/www/',
+    }
 })
