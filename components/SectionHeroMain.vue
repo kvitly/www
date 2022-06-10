@@ -46,11 +46,11 @@
             </svg>
             <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md lg:-mt-16">
               <div class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
-                <img class="w-full" src="/assets/freelance-vibe.jpg" alt="" />
+                <img class="w-full" src="~/assets/freelance-vibe.jpg" alt="" />
               </div>
               <!-- <button type="button" class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
                 <span class="sr-only">Watch our video to learn more</span>
-                <img class="w-full" src="/assets/freelance-vibe.jpg" alt="" />
+                <img class="w-full" src="~/assets/freelance-vibe.jpg" alt="" />
                 <span class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
                   <svg class="h-20 w-20 text-emerald-500" fill="currentColor" viewBox="0 0 84 84">
                     <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />

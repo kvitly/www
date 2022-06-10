@@ -6,7 +6,7 @@
         <div>
           <a href="#" class="flex">
             <span class="sr-only">Workflow</span>
-            <img class="h-8 w-auto sm:h-14" src="/assets/kvitly.svg" alt="" />
+            <img class="h-8 w-auto sm:h-14" src="~/assets/kvitly.svg" alt="" />
           </a>
         </div>
         <div class="-mr-2 -my-2 md:hidden">

@@ -17,7 +17,7 @@
           <footer class="mt-8">
             <div class="flex items-start">
               <div class="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                <img class="h-12 w-12 rounded-full" src="/assets/anton-kinoshkola.png" alt="" />
+                <img class="h-12 w-12 rounded-full" src="~/assets/anton-kinoshkola.png" alt="" />
               </div>
               <div class="ml-4">
                 <div class="text-base font-base text-gray-500">Антон Мишутин</div>
@@ -43,7 +43,7 @@
           <footer class="mt-8">
             <div class="flex items-start">
               <div class="flex-shrink-0 inline-flex rounded-full border-2 border-white">
-                <img class="h-12 w-12 rounded-full" src="/assets/igor-lexminsk.png" alt="" />
+                <img class="h-12 w-12 rounded-full" src="~/assets/igor-lexminsk.png" alt="" />
               </div>
               <div class="ml-4">
                 <div class="text-base font-base text-gray-500">Игорь Авсянников</div>
