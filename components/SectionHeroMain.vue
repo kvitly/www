@@ -18,8 +18,8 @@
           <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
             <h1>
               <span class="mt-1 block text-3xl tracking-tight font-extrabold sm:text-4xl xl:text-5xl">
-                <span class="block text-gray-900">Все для малого бизнеса </span>
-                <span class="block text-emerald-500">в одном месте</span>
+                <span class="block text-gray-900">Для старта и роста </span>
+                <span class="block text-emerald-500">вашего бизнеса</span>
               </span>
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">

@@ -3,8 +3,8 @@
   <div class=" pt-12 sm:pt-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Нам доверяют сотни бизнесов</h2>
-        <p class="mt-3 text-xl text-gray-500 sm:mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.</p>
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Нам доверяют</h2>
+        <p class="mt-3 text-xl text-gray-500 sm:mt-4">Мы работаем больше пяти лет и за это время сотни людей запустили свое дело с нами.</p>
       </div>
     </div>
     <div class="mt-10 pb-12 bg-white sm:pb-16">
