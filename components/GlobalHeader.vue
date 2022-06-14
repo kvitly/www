@@ -4,9 +4,9 @@
     <Popover class="relative bg-white">
       <div class="flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-10">
         <div>
-          <a href="#" class="flex">
-            <span class="sr-only">Workflow</span>
-            <img class="h-8 w-auto sm:h-14" src="~/assets/kvitly.svg" alt="" />
+          <a href="/" class="flex">
+            <span class="sr-only">kvitly</span>
+            <img class="w-auto h-14" src="~/assets/kvitly.svg" alt="" />
           </a>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
@@ -51,16 +51,35 @@
                       </a>
                     </div>
                     <div class="p-5 bg-gray-50 sm:p-8">
-                      <a href="#" class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                      <a :href="integrations.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                        <div
+                          class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12">
+                          <component :is="integrations.icon" class="h-6 w-6" aria-hidden="true" />
+                        </div>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            {{ integrations.name }}
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            {{ integrations.description }}
+                          </p>
+                        </div>
+                      </a>
+                      <!-- class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
+                                                  <div
+                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12">
+                            <component :is="MailIcon" class="h-6 w-6" aria-hidden="true" />
+                          </div>
                         <div class="flex items-center">
-                          <div class="text-base font-medium text-gray-900">Интеграции</div>
+                          <div class="text-base font-medium text-gray-900">Интеграции со сторонними сервисами</div>
                           <span
                             class="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-emerald-100 text-emerald-800">
                             Super </span>
                         </div>
-                        <p class="mt-1 text-sm text-gray-500">Подключение 100+ сервисов.
+                        <p class="mt-1 text-sm text-gray-500">Подключение десятков сервисов для упрощения ежедневной
+                          работы
                         </p>
-                      </a>
+                      </a> -->
                     </div>
                   </div>
                 </PopoverPanel>
@@ -118,8 +137,7 @@
             <div class="pt-5 pb-6 px-5">
               <div class="flex items-center justify-between">
                 <div>
-                  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-emerald-600.svg"
-                    alt="Workflow" />
+                  <img class="w-auto h-14" src="~/assets/kvitly.svg" alt="kvitly" />
                 </div>
                 <div class="-mr-2">
                   <PopoverButton
@@ -141,16 +159,25 @@
                       {{ item.name }}
                     </div>
                   </a>
+                  <a :href="integrations.href"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                    <div
+                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white">
+                      <component :is="integrations.icon" class="h-6 w-6" aria-hidden="true" />
+                    </div>
+                    <div class="ml-4 text-base font-medium text-gray-900">
+                      {{ integrations.name }}
+                    </div>
+                  </a>
                 </nav>
               </div>
             </div>
             <div class="py-6 px-5">
               <div class="grid grid-cols-2 gap-4">
-                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Pricing </a>
+                <a href="/plans" class="text-base font-medium text-gray-900 hover:text-gray-700"> Тарифы </a>
 
-                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Docs </a>
+                <a href="/blog" class="text-base font-medium text-gray-900 hover:text-gray-700"> Блог </a>
 
-                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Enterprise </a>
                 <a v-for="item in resources" :key="item.name" :href="item.href"
                   class="text-base font-medium text-gray-900 hover:text-gray-700">
                   {{ item.name }}
@@ -159,11 +186,11 @@
               <div class="mt-6">
                 <a href="#"
                   class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">
-                  Sign up </a>
+                  Попробовать бесплатно </a>
                 <p class="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?
+                  Уже регистрировались?
                   {{ ' ' }}
-                  <a href="#" class="text-emerald-600 hover:text-emerald-500"> Sign in </a>
+                  <a href="#" class="text-emerald-600 hover:text-emerald-500"> Войти </a>
                 </p>
               </div>
             </div>
@@ -185,47 +212,55 @@ import {
   UsersIcon,
   XIcon,
   MenuIcon,
+  ViewGridAddIcon,
 } from '@heroicons/vue/outline'
 import { ChevronDownIcon } from '@heroicons/vue/solid'
 
 const solutions = [
   {
     name: 'Веб-сайт',
-    description: 'Сайт для вашего бизнеса.',
-    href: '#',
+    description: 'Соберите именно такой сайт, который вам нужен',
+    href: '/products/website',
     icon: DesktopComputerIcon,
   },
   {
     name: 'Лендинг',
-    description: 'Продающая страница продукта.',
-    href: '#',
+    description: 'Одностраничные сайты для продвижения продуктов и услуг',
+    href: '/products/landing',
     icon: DocumentIcon,
   },
   {
     name: 'Интернет-магазин',
-    description: "Настоящий магазин онлайн.",
-    href: '#', 
+    description: "Решение для онлайн-продаж и управления каталогом",
+    href: '/products/ecommerce',
     icon: ShoppingCartIcon
   },
   {
     name: 'Платежи',
-    description: 'Прием платежей онлайн.',
-    href: '#',
+    description: 'Простое подключение сервисов для приема платежей онлайн',
+    href: '/products/payments',
     icon: CreditCardIcon,
   },
   {
     name: 'Рассылки',
-    description: 'Письма и цепочки писем клиентам.',
-    href: '#',
+    description: 'Автоматизации для отправки писем и цепочек писем клиентам',
+    href: '/products/email',
     icon: MailIcon,
   },
   {
     name: 'CRM-система',
-    description: 'Управление клиентами и заказами.',
-    href: '#',
+    description: 'Сервис для комфортного управления заказами и контактами',
+    href: '/products/crm',
     icon: UsersIcon,
   },
 ]
+const integrations = {
+    name: 'Интеграции со сторонними сервисами',
+    description: 'Подключение десятков сервисов для упрощения ежедневной работы',
+    href: '/integrations',
+    icon: ViewGridAddIcon,
+};
+
 const resources = [
   {
     name: 'Справка',
