@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white font-light">
+  <div class="bg-white font-light overflow-x-hidden">
     <header class="sticky top-0 z-50 bg-white shadow">
       <GlobalHeader />
     </header>

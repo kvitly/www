@@ -1,0 +1,861 @@
+{
+    "system-webhook": {
+      "img": "webhook.jpg",
+      "title": "Webhook",
+      "plans": ["premium"],
+      "folds": [
+        "webhook",
+        "notification-gateway"
+      ],
+      "about": "Вебхук — это технология оповещения внешних сервисов о заказах на вашем сайте. Тут можно указать адрес для приема сообщений, и заказы будут приходить в ту систему, которой вы уже пользуетесь. Это отлично подходит, когда у нас нет прямой интеграции с нужным вам сервисом.",
+      "url": "#",
+      "manual": "/blog/intieghratsiia-s-sobstviennoi-sistiemoi-s-pomoshchiu-viebkhukov/",
+      "integration": {
+        "name": "system-webhook",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "google-sheets": {
+      "img": "google-sheets.jpg",
+      "title": "Google Таблицы",
+      "plans": ["premium"],
+      "folds": [
+        "webhook",
+        "notification-gateway"
+      ],
+      "about": "Настраивайте отправку данных из форм, заполненных на сайте, прямо в Гугл Таблицы. В таблицах полученные данные можно редактировать и работать над ними вместе с коллегами где угодно и когда угодно.",
+      "url": "https://www.google.com/intl/ru/sheets/about/",
+      "manual": "/help/~addon/nastrojka-opoveshenij-o-zakazah-v-google-tablicy",
+      "integration": {
+        "name": "google-sheets",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "zapier": {
+      "img": "zapier.jpg",
+      "title": "Zapier",
+      "plans": ["premium"],
+      "folds": [
+        "webhook",
+        "notification-gateway"
+      ],
+      "about": "Запиэр позволяет автоматизировать рутину через интеграции со множеством онлайн-сервисов. Для этого можно настроить отправку событий с вашего сайта в Zapier через вебхук-адрес, и уже там указать, что должно происходить после получения данных о событии.",
+      "url": "https://zapier.com/",
+      "manual": "/help/~addon/zapier-nastrojka-otpravki-pisma-klientu-posle-polucheniya-zakaza",
+      "integration": {
+        "name": "zapier",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "tap2pay": {
+      "img": "tap2pay.png",
+      "title": "Tap2Pay",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "С ТапТуПэй можно принимать платежи через Facebook, Instagram, Messenger, WhatsApp, Telegram, Viber and WeChat. Ваши клиенты смогут платить используя карты, PayPal или наличными при доставке.",
+      "url": "https://tap2pay.me/ru/",
+      "integration": {
+        "name": "tap2pay",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "bepaid": {
+      "img": "bepaid-cards.jpg",
+      "title": "bePaid (платежные карты)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "БиПэйд — это сервис для приема платежей по банковским картам VISA, MasterCard, БЕЛКАРТ или Халва.",
+      "url": "https://bepaid.by/",
+      "manual": "/help/~addon/kak-podklyuchit-platezhi-po-kartochkam-ot-bepaid",
+      "integration": {
+        "name": "bepaid-cards",
+        "settings": {
+          "types": [
+            "credit_card"
+          ]
+        }
+      }
+    },
+    "webpay": {
+      "img": "webpay.jpg",
+      "title": "WEBPAY (платежные карты)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Вебпэй — сервис для приёма онлайн-платежей банковскими картами Visa, MasterCard, Белкарт и через АИС «Расчёт» ЕРИП.",
+      "url": "https://webpay.by/",
+      "manual": "/help/~addon/kak-podklyuchit-platezhi-po-kartochkam-ot-webpay",
+      "integration": {
+        "name": "webpay-cards",
+        "settings": {}
+      }
+    },
+    "expresspay": {
+      "img": "expresspay.jpg",
+      "title": "expresspay (платежные карты)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Экспресс платежи позволяют подключить онлайн-оплату с помощью карт VISA, MasterCard, Maestro на вашем сайте, либо без сайта по публичному счету, выставленному в личном кабинете.",
+      "url": "https://express-pay.by/",
+      "manual": "/help/~addon/kak-podklyuchit-platezhi-po-kartochkam-i-erip-ot-expresspay",
+      "integration": {
+        "name": "expresspay-cards",
+        "settings": {}
+      }
+    },
+    "artpay": {
+      "img": "artpay.jpg",
+      "title": "ArtPay (платежные карты)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Система платежей АртПэй — универсальная система для приема платежей онлайн по банковским платежным карточкам систем Visa, MasterCard и БЕЛКАРТ.",
+      "url": "https://www.artpay.by/",
+      "manual": "/blog/priiom-platiezhiei-na-saitie-chieriez-artpay/",
+      "integration": {
+        "name": "artpay-cards",
+        "settings": {}
+      }
+    },
+    "hgrosh": {
+      "img": "hutkigrosh.jpg",
+      "title": "Хуткi Грош (ЕРИП)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Хуткi Грош — многофункциональный сервис по подключению к ЕРИП (cистеме платежей АИС «Расчет») для расчета и приема платежей за товары и услуги по всей Беларуси.",
+      "url": "https://www.hutkigrosh.by/",
+      "manual": "/help/~addon/kak-podklyuchit-erip-ot-hutki-grosh",
+      "integration": {
+        "name": "hgrosh-erip",
+        "settings": {}
+      }
+    },
+    "easypay": {
+      "img": "easypay.jpg",
+      "title": "EasyPay (платежные карты)",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "ИзиПэй — сервис для приема платежей на сайте картами Visa, MasterCard.",
+      "url": "https://ssl.easypay.by/",
+      "manual": "/help/~addon/kak-podklyuchit-platezhi-po-kartochkam-i-erip-ot-easypay",
+      "integration": {
+        "name": "easypay-cards",
+        "settings": {}
+      }
+    },
+    "yandex-metrika": {
+      "img": "yandex-metrika.jpg",
+      "title": "Яндекс.Метрика",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "counter",
+        "analytics-gateway"
+      ],
+      "about": "Яндекс.Метрика — бесплатный аналитический сервис для оценки посещаемости сайтов, конверсии и анализа поведения пользователей.",
+      "url": "https://metrika.yandex.ru/",
+      "manual": "/help/~addon/yandeks-metrika-prodvinutyj-schetchik-poseshenij",
+      "integration": {
+        "name": "yandex-metrika",
+        "settings": {
+          "id": "",
+          "webvisor": true
+        }
+      }
+    },
+    "vk-pixel": {
+      "img": "vk-retargeting.jpg",
+      "title": "Ретаргетинг ВКонтакте",
+      "plans": ["premium"],
+      "folds": [
+        "retarget"
+      ],
+      "about": "Ретаргентинг позволяет гибко собирать аудитории для последующей рекламы во ВКонтакте. Например, можно формировать группы из всех пользователей или тех, кто посетил определенные разделы или страницы сайта и т.п.",
+      "url": "https://vk.com/ads?act=retargeting",
+      "manual": "/help/~addon/retargeting-vkontakte-sistema-retargetinga",
+      "integration": {
+        "name": "vk-pixel",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "vk-chat": {
+      "img": "vk-retargeting.jpg",
+      "title": "Сообщения сообщества ВКонтакте",
+      "plans": ["basic", "premium"],
+      "folds": [
+        "livechat"
+      ],
+      "about": "Быстрый способ связи с посетителями вашего сайта через ВКонтакте. Вы сможете ответить клиенту даже после того, как он покинет сайт — сообщения будут отправлены от имени Сообщества.",
+      "url": "https://vk.com/dev/CommunityMessages",
+      "manual": "/help/~addon/vkontakte-soobsheniya-soobshestva-onlajn-konsultant",
+      "integration": {
+        "name": "vk-chat",
+        "settings": {
+          "id": "",
+          "settings": ""
+        }
+      }
+    },
+    "fb-pixel": {
+      "img": "fb-pixel.jpg",
+      "title": "Facebook-пиксель",
+      "plans": ["premium"],
+      "folds": [
+        "retarget",
+        "analytics-gateway"
+      ],
+      "about": "Пиксель Фейсбук — это инструмент, с которым можно измерить результативность рекламы и собирать аудитории для ретаргетинга в Facebook, Messenger и Instagram. Его также можно использовать для изучения действий людей на своем сайте.",
+      "url": "https://www.facebook.com/business/help/651294705016616",
+      "manual": "/help/~addon/piksel-ot-fejsbuk-sistema-retargetinga",
+      "integration": {
+        "name": "fb-pixel",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yandex-market": {
+      "img": "yandex-market.jpg",
+      "plans": ["premium"],
+      "title": "Экспорт на Яндекс.Маркет",
+      "folds": [
+        "marketplaces"
+      ],
+      "about": "Яндекс.Маркет — маркертплейс с огромным ассортиментом товаров от 20 тысяч магазинов. Его можно использовать как дополнительный канал продаж, где вас легко смогут найти покупатели (товары на Яндекс.Маркете попадают в выдачу Яндекса). Тут вы можете сформировать файл для выгрузки в маркет.",
+      "url": "#",
+      "integration": {
+        "name": "yandex-market",
+        "settings": {}
+      }
+    },
+    "google-merchant": {
+      "img": "google-merchant.jpg",
+      "plans": ["premium"],
+      "title": "Экспорт в Google Merchant",
+      "folds": [
+        "marketplaces"
+      ],
+      "about": "В Google Merchant Center продавцы могут добавлять сведения о своих товарах и магазинах. Эта информация будет доступна в разных сервисах Google. Здесь можно включить автоматическую генерацию файла для экспорта товаров.",
+      "url": "#",
+      "integration": {
+        "name": "google-merchant",
+        "settings": {}
+      }
+    },
+    "calltracking": {
+      "img": "calltracking.png",
+      "title": "CallTracking.by",
+      "plans": ["premium"],
+      "folds": [
+        "marketing"
+      ],
+      "about": "Колтрекинг — система динамического и статического отслеживания звонков. Сервис позволяет использовать разные номера телефона для разных рекламных кампаний и предоставляет подробные отчёты о звонках.",
+      "url": "http://call-tracking.by",
+      "manual": "/help/~addon/koltrekingbaj-sistema-dinamicheskogo-i-staticheskogo-kol-trekinga",
+      "integration": {
+        "name": "calltracking",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yagla": {
+      "img": "yagla.jpg",
+      "title": "Yagla",
+      "plans": ["premium"],
+      "folds": [
+        "marketing"
+      ],
+      "about": "Сервис позволяет показывайть разным посетителям вашего сайта разные заголовки, кнопки, подписи и даже картинки, чтобы максимально точно попадать в их потребности и в конечном счете – больше продавать.",
+      "url": "https://yagla.ru/",
+      "manual": "/help/~addon/yagla-split-testirovanie",
+      "integration": {
+        "name": "yagla",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yclients": {
+      "img": "yclients.jpg",
+      "title": "YCLIENTS",
+      "plans": ["basic", "premium"],
+      "folds": [
+        "booking"
+      ],
+      "about": "ВайКлайентс — онлайн-запись, автоматизация и управление бизнесом в сфере услуг. Учет, склад, статистика, SMS и работа с клиентами в одном месте.",
+      "url": "http://yclients.com?promo=from41433",
+      "manual": "/help/~addon/y-clients-onlajn-zapis-avtomatizaciya-i-upravlenie-biznesom-v-sfere-uslug",
+      "integration": {
+        "name": "yclients",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "zapros": {
+      "img": "zapros.jpg",
+      "title": "Zapros.by",
+      "plans": ["basic", "premium"],
+      "folds": [
+        "booking"
+      ],
+      "about": "ЗапросБай — система, которая позволяет вашим клиентам на вашем сайте в любое время самостоятельно записаться на предлагаемые услуги. Управлять записью, временем и общаться с клиентами при этом можно в личном кабинете на zapros.by",
+      "url": "http://zapros.by/",
+      "manual": "/help/~addon/zaprosbaj-onlajn-zapis",
+      "integration": {
+        "name": "zapros",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "google-analytics": {
+      "img": "google-analytics.jpg",
+      "title": "Google Analytics",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "counter",
+        "analytics-gateway"
+      ],
+      "about": "Гугл Аналитика — бесплатный сервис от Google для сбора детальной статистики посетителей вашего сайта. Система обрабатывает полученную с сайта информацию и строит отчеты о посещениях, конверсиях, геолокации, провайдере, источниках трафика, операционной системе и других параметрах.",
+      "url": "https://www.google.com/analytics/",
+      "manual": "/help/~addon/google-analytics-prodvinutyj-schetchik-poseshenij",
+      "integration": {
+        "name": "google-analytics",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "liveinternet": {
+      "img": "liveinternet.jpg",
+      "title": "Счетчик LiveInternet",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "counter"
+      ],
+      "about": "ЛайвИнтернет – сервис для сбора статистики сайта: посещения, источники переходов, среднее количество времени, проведенное на ресурсе и т.п.",
+      "url": "http://www.liveinternet.ru/",
+      "manual": "/help/~addon/schetchik-lajvinternet-sistema-analitiki",
+      "integration": {
+        "name": "liveinternet",
+        "settings": {}
+      }
+    },
+    "jivosite": {
+      "img": "jivosite.png",
+      "title": "JivoSite",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "livechat"
+      ],
+      "about": "ЖивоСайт позволяет общаться с посетителями сайта в чате в режиме онлайн. Это может увеличить эффективность сайта и повысить продажи без дополнительных вложений в рекламу.",
+      "url": "http://www.jivosite.ru/?pid=5172",
+      "manual": "/help/~addon/jivosite-onlajn-konsultant",
+      "integration": {
+        "name": "jivosite",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "chatra": {
+      "img": "chatra.png",
+      "title": "chatra",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "livechat"
+      ],
+      "about": "С Чатрой можно общаться с посетителями сайта в чате в режиме реального времени или через офлайн-мессенджеры. С этим сервисом также можно собрать разные каналы коммуникации в одном месте и настроить чат-ботов.",
+      "url": "https://chatra.io/ru/?enroll=&partnerId=fYkYw6RLAoogNFL6Q",
+      "manual": "/help/~addon/chatra-onlajn-konsultant",
+      "integration": {
+        "name": "chatra",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "bitrix24-line": {
+      "img": "bitrix24-line.jpg",
+      "title": "Чат для Битрикс24",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "livechat"
+      ],
+      "about": "Если вы используете CRM от Битрикс24, вы можете общаться с посетителями вашего сайта в режиме реального времени в интерфейсе Битрикса.",
+      "url": "https://www.bitrix24.by/?p=5200347",
+      "manual": "/help/~addon/chat-dlya-bitriks24-onlajn-konsultant",
+      "integration": {
+        "name": "bitrix24-line",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "rocketsms": {
+      "img": "rocketsms.jpg",
+      "title": "RocketSMS",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "notification",
+        "notification-gateway"
+      ],
+      "about": "РокетСМС – сервис СМС-рассылок в Беларуси. Тут можно настроить получение оповещений о заказах с сайта на ваш телефон в виде sms-сообщений.",
+      "url": "http://rocketsms.by/?refid=RS36FKBB",
+      "manual": "/help/~addon/roketsms-opovesheniya",
+      "integration": {
+        "name": "rocketsms",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "telegram-notification": {
+      "img": "telegram.jpg",
+      "title": "Telegram",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "notification",
+        "notification-gateway"
+      ],
+      "about": "Добавляйте наш бот в личной переписке или в групповой чат и получайте уведомления о заказах с сайта внутри мессенджера Телеграм.",
+      "url": "https://telegram.org/",
+      "manual": "/help/~addon/telegram-opoveshenie-o-zakazah-s-sajta",
+      "integration": {
+        "name": "telegram-notification",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "callbacky": {
+      "img": "callbacky.jpg",
+      "title": "CallBacky",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "callback"
+      ],
+      "about": "Колбэки — беларусский виджет обратного звонка для вашего сайта. Сервис ползволит посетителям вашего сайта заказать обратный звонок и сообщит о нем вашим менеджерам.",
+      "url": "http://callbacky.by/?refid=CB36FKBB",
+      "manual": "/help/~addon/kolbeki-servis-mgnovennogo-obratnogo-zvonka",
+      "integration": {
+        "name": "callbacky",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "widget-itcenter": {
+      "img": "widget-itcenter.jpg",
+      "title": "Виджет IT Center",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "callback"
+      ],
+      "about": "IT Центр предлагает установить форму обратного звонка на сайт. Сервис предлагает гибкую настройку виджета и личный кабинет для управления коммуникациями с клиентом.",
+      "url": "https://widget.it-center.by/",
+      "manual": "/help/~addon/vidzhet-ot-it-center-obratnyj-zvonok",
+      "integration": {
+        "name": "widget-itcenter",
+        "settings": {}
+      }
+    },
+    "pozvonim": {
+      "img": "pozvonim.jpg",
+      "title": "Позвоним",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "callback"
+      ],
+      "about": "МТТ Бизнес предлагает различные способы связи с клиентами: общение через соцсети, мессенджеры, обратный звонок или онлайн-консультант на вашем сайте.",
+      "url": "http://pozvonim.com/?i=8242878282",
+      "manual": "/help/~addon/pozvonim-servis-obratnogo-zvonka",
+      "integration": {
+        "name": "pozvonim",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yandex-verification": {
+      "img": "yandex-verification.jpg",
+      "title": "Яндекс.Вебмастер",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "Cервис Яндекса для вебмастеров предлагет панель инструментов для оценки индексации сайта и настройки описания сайта в результатах поиска Яндекса. Сервис также позволяет сообщать Яндексу о новых и удаленных страницах.",
+      "url": "https://webmaster.yandex.ru/",
+      "manual": "/help/~addon/yandeks-vebmaster-podtverzhdenie-prav-na-sajt",
+      "integration": {
+        "name": "yandex-verification",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "bing-site-verification": {
+      "img": "bing.jpg",
+      "title": "Bing Webmaster Tools",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "Средства веб-мастера Бинг позволяют повысить эффективность выдачи вашего сайта в поиске Bing и получить доступ к бесплатным отчетам, инструментам и ресурсам для улучшения индексации.",
+      "url": "https://www.bing.com/toolbox/webmaster",
+      "manual": "/help/~addon/kak-ustanovit-bing-webmaster",
+      "integration": {
+        "name": "bing-site-verification",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "pinterest-site-verification": {
+      "img": "pinterest.jpg",
+      "title": "Ваш сайт в Pinterest",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "После подтверждения прав в Пинтерест, ваше фото профиля будет отображаться на всех пинах. Также вы получите доступ к аналитике для пинов, которые вы публикуете со своего веб-сайта, и пинов, которые другие люди создают на вашем веб-сайте.",
+      "url": "https://business.pinterest.com/ru",
+      "manual": "/help/~addon/podtverzhdenie-prav-na-sajt-v-pinterest",
+      "integration": {
+        "name": "pinterest-site-verification",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "google-site-verification": {
+      "img": "google-site-verification.jpg",
+      "title": "Google Search Console",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "Гугл для веб-мастеров — это бесплатный сервис, который позволяет узнать, как сайт представлен в Google Поиске и оптимизировать его. Эта интеграция позволяет подтвердить права на сайт через HTML-тег.",
+      "url": "https://www.google.by/intl/ru/webmasters/",
+      "manual": "/help/~addon/google-search-console-podtverzhdenie-prav-na-sajt",
+      "integration": {
+        "name": "google-site-verification",
+        "settings": {
+          "id": ""
+        }
+      },
+      "app": [
+        "staronka",
+        "koshyk"
+      ]
+    },
+    "facebook-site-verification": {
+      "img": "fb-pixel.jpg",
+      "title": "Подтверждение домена Facebook",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "Подтверждение домена позволяет заявить ваши права на домен и контролировать разрешение на его использование в ссылках и в рекламном контенте на фейсбуке.",
+      "url": "https://developers.facebook.com/docs/sharing/domain-verification",
+      "integration": {
+        "name": "facebook-site-verification",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "google-mail": {
+      "img": "google-mail.jpg",
+      "plans": ["premium"],
+      "title": "Gmail для бизнеса",
+      "folds": [
+        "mailserver"
+      ],
+      "about": "Если вы хотите иметь корпоративную почту от Гугл, тут можно подтвердить право владения доменом, чтобы иметь адреса вида `@ваш.домен` и пользоваться всеми возможностями GSuite.",
+      "url": "https://gsuite.google.ru/",
+      "integration": {
+        "name": "google-mail",
+        "settings": {}
+      }
+    },
+    "google-tag-manager": {
+      "img": "google-tag-manager.jpg",
+      "plans": ["premium"],
+      "title": "Google Tag Manager",
+      "folds": [
+        "marketing"
+      ],
+      "about": "Гугл диспетчер тегов — бесплатный инструмент для самостоятельного управления JavaScript и HTML тегами сайта без привлечения программистов. После подключения интеграции можно будет настраивать любые сервисы и добавлять новые скрипты уже в интерфейсе Google Tag Manager.",
+      "url": "https://www.google.by/analytics/tag-manager/",
+      "manual": "/help/~addon/gugl-dispetcher-tegov-upravlenie-sajtom",
+      "integration": {
+        "name": "google-tag-manager",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "google-remarketing": {
+      "img": "google-remarketing.jpg",
+      "plans": ["premium"],
+      "title": "Ремаркетинг для Google",
+      "folds": [
+        "retarget",
+        "analytics-gateway"
+      ],
+      "about": "С помощью ремаркетинга можно показывать релевантные объявления Google Adwords пользователям, которые посещали ваш сайт.",
+      "url": "https://support.google.com/adwords/answer/2453998?hl=ru",
+      "manual": "/help/~addon/remarketing-dlya-gugl",
+      "integration": {
+        "name": "google-remarketing",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yandex-mail": {
+      "img": "yandex-mail.jpg",
+      "plans": ["premium"],
+      "title": "Яндекс.Почта для домена",
+      "folds": [
+        "mailserver"
+      ],
+      "about": "Если вы хотите иметь корпоративную почту от Яндекс.Почты, тут можно подтвердить право владения доменом, чтобы иметь адреса вида `@ваш.домен` и использовать интерфейс Яндекса.",
+      "url": "http://pdd.yandex.ru/",
+      "manual": "/help/~addon/yandeks-pochta-dlya-domena-korporativnyj-pochtovyj-server",
+      "integration": {
+        "name": "yandex-mail",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "zoho-mail": {
+      "img": "zoho-mail.jpg",
+      "plans": ["premium"],
+      "title": "Zoho",
+      "folds": [
+        "mailserver"
+      ],
+      "about": "Используйте для своего бизнеса весь набор инструментов и приложений от Зохо от корпоративной почты до системам автоматизации бизнеса.",
+      "url": "https://www.zoho.com/",
+      "integration": {
+        "name": "zoho-mail",
+        "settings": {}
+      }
+    },
+    "mailru-verification": {
+      "img": "mailru-verification.jpg",
+      "title": "Кабинет вебмастера Mail.Ru",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "webmaster"
+      ],
+      "about": "Кабинет вебмастера – это сервис, предоставляющий информацию о том, как индексируются ваши сайты в Поиске Мэйл.ру.",
+      "url": "http://webmaster.mail.ru/",
+      "manual": "/help/~addon/kabinet-vebmastera-podtverzhdenie-prav-na-sajt",
+      "integration": {
+        "name": "mailru-verification",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "mailru-mail": {
+      "img": "mailru-mail.jpg",
+      "plans": ["premium"],
+      "title": "Mail.ru для бизнеса",
+      "folds": [
+        "mailserver"
+      ],
+      "about": "Сервис позволяет подключить свой корпоративный домен, завести почтовые ящики для всех своих сотрудников и использовать рабочие инструменты от Мэйлру.",
+      "url": "https://biz.mail.ru/mail/",
+      "manual": "/help/~addon/mail-ru-dlya-biznesa-korporativnyj-pochtovyj-server",
+      "integration": {
+        "name": "mailru-mail",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "mailchimp": {
+      "img": "mailchimp.jpg",
+      "title": "Mailchimp",
+      "plans": ["basic", "premium"],
+      "folds": [
+        "mailing"
+      ],
+      "about": "Майлчимп – это платформа для автоматизации email-маркетинга. Интеграция позволяет отправлять собранные на сайте электронные адреса напрямую в Mailchimp и уже там отправлять триггерные письма или создавать массовые рассылки.",
+      "url": "https://mailchimp.com/",
+      "manual": "/help/~addon/majlchimp-pochtovaya-rassylka",
+      "integration": {
+        "name": "mailchimp-subscribe",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "sendgrid": {
+      "img": "sendgrid.jpg",
+      "title": "Письмо SendGrid",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "notification",
+        "notification-gateway"
+      ],
+      "about": "Сендгрид – сервис для почтовых рассылок. Благодаря системе шаблонов писем и автоматизациям, вы можете отправлять оповещения о заказах себе или своим клиентам.",
+      "url": "https://sendgrid.com/",
+      "manual": "/help/~addon/nastrojka-opravki-pisem-klientam-cherez-sendgrid",
+      "integration": {
+        "name": "sendgrid-send",
+        "settings": {
+          "id": "",
+          "list": []
+        }
+      }
+    },
+    "unisender": {
+      "img": "unisender.jpg",
+      "title": "Unisender",
+      "plans": ["basic", "premium"],
+      "folds": [
+        "mailing"
+      ],
+      "about": "Юнисендер –  сервис автоматических массовых рассылок по e-mail и sms. С помощью этой интеграции можно организовать отправку триггерных писем или сделать формирование списков рассылок.",
+      "url": "https://unisender.com/",
+      "manual": "/help/~addon/unisender-pochtovaya-rassylka",
+      "integration": {
+        "name": "unisender-subscribe",
+        "settings": {
+          "list": []
+        }
+      }
+    },
+    "addthis": {
+      "img": "addthis.jpg",
+      "title": "Виджеты AddThis",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "social"
+      ],
+      "about": "Интеграция с Эдзис позволяет добавить на ваш сайт кнопки для перехода в ваши социальныхе сети, возможности для шаринга и фоловинга, инструменты для таргетирования и рекомендаций контента.",
+      "url": "http://addthis.com/",
+      "manual": "/help/~addon/vidzhety-edzis-knopki-socialnyh-setej",
+      "integration": {
+        "name": "addthis",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "sumome": {
+      "img": "sumome.jpg",
+      "title": "Виджеты Sumo",
+      "plans": ["start", "basic", "premium"],
+      "folds": [
+        "social"
+      ],
+      "about": "Сервис Сумо предлагает десятки виджетов для вашего сайта, от простых кнопок поделиться до сложной аналитики с тепловыми картами.",
+      "url": "http://sumo.com/",
+      "manual": "/help/~addon/vidzhety-sumo-nabor-poleznyh-vidzhetov-dlya-sajta",
+      "integration": {
+        "name": "sumome",
+        "settings": {
+          "id": ""
+        }
+      }
+    },
+    "yookassa": {
+      "img": "yookassa.jpg",
+      "title": "ЮKassa",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "ЮKassa — сервис для приема платежей на сайте и работы с онлайн-кассой.",
+      "url": "https://yookassa.ru/",
+      "manual": "/help/kak-podklyuchit-platezhi-cherez-yukassa",
+      "integration": {
+        "name": "yookassa",
+        "settings": {}
+      }
+    },
+    "paypal": {
+      "img": "paypal.png",
+      "title": "PayPal",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "PayPal — одна из крупнейших электронных платежных систем в мире. Интеграция позволяет принимать платежи с сайта через Пэйпал.",
+      "url": "https://paypal.com/",
+      "integration": {
+        "name": "paypal",
+        "settings": {}
+      }
+    },
+    "alfabank": {
+      "img": "alfabank.jpg",
+      "title": "Альфа-Банк",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Интернет-эквайринг от Альфа-Банка позволяет принимать онлайн-платежи на вашем сайте по картам VISA, MASTERCARD, MAESTRO, БЕЛКАРТ.",
+      "url": "https://alfa-biz.by/acquiring/",
+      "manual": "/help/~addon/kak-podklyuchit-priem-platezhej-ot-alfa-banka",
+      "integration": {
+        "name": "alfabank-cards",
+        "settings": {}
+      }
+    },
+    "stripe": {
+      "img": "stripe.png",
+      "title": "Stripe",
+      "plans": ["premium"],
+      "folds": [
+        "payment",
+        "payment-gateway"
+      ],
+      "about": "Stripe — платежный сервис для приема онлайн-платежей более чем в 25 странах. Для подключения компания или индивидуальный продавец должны быть резидентами стран, где работает Страйп.",
+      "url": "https://stripe.com/",
+      "integration": {
+        "name": "stripe",
+        "settings": {}
+      }
+    }
+  }

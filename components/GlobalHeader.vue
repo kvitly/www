@@ -85,8 +85,8 @@
                 </PopoverPanel>
               </transition>
             </Popover>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Тарифы </a>
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Блог </a>
+            <a href="/plans" class="text-base font-medium text-gray-500 hover:text-gray-900"> Тарифы </a>
+            <a href="/blog" class="text-base font-medium text-gray-500 hover:text-gray-900"> Блог </a>
 
             <Popover class="relative" v-slot="{ open }">
               <PopoverButton
@@ -121,8 +121,8 @@
             </Popover>
           </PopoverGroup>
           <div class="flex items-center md:ml-12">
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Войти</a>
-            <a href="#"
+            <a href="/app/login" class="text-base font-medium text-gray-500 hover:text-gray-900">Войти</a>
+            <a href="/app/signup"
               class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">
               Попробовать бесплатно </a>
           </div>
@@ -184,13 +184,13 @@
                 </a>
               </div>
               <div class="mt-6">
-                <a href="#"
+                <a href="/app/signup"
                   class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">
                   Попробовать бесплатно </a>
                 <p class="mt-6 text-center text-base font-medium text-gray-500">
                   Уже регистрировались?
                   {{ ' ' }}
-                  <a href="#" class="text-emerald-600 hover:text-emerald-500"> Войти </a>
+                  <a href="/app/login" class="text-emerald-600 hover:text-emerald-500"> Войти </a>
                 </p>
               </div>
             </div>
