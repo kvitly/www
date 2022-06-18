@@ -3,7 +3,7 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "BASE_URL=/www/ nuxt generate",
+    "generate": "NUXT_APP_BASE_URL=/www/ nuxt generate",
     "preview": "nuxt preview",
     "deploy": "touch ./dist/.nojekyll && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
@@ -17,6 +17,7 @@
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.2",
     "vue-router": "4"
   }
 }
