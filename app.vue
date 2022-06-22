@@ -11,3 +11,11 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+useHead({
+  title: 'My App',
+  base: 'www'
+});
+
+</script>
