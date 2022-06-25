@@ -5,7 +5,7 @@
             :title="page.title"
             :description="page.desciption">
         </SectionHeroPage>
-
+        <SectionPlansPlans></SectionPlansPlans>
     </div>
 </template>
 
