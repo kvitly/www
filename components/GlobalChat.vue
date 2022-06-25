@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <!-- <script type="application/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+        <script type="application/javascript">window.Beacon('init', 'fbf4b6e1-394b-4970-8f6e-ce1c077348d5')</script> -->
+    </div>
+</template>
+<script setup>
+    // import { ref, onMounted } from 'vue'
+
+    // onMounted(() => {
+    //     let Script = document.createElement("script");
+    //     Script.setAttribute("src", "https://cdn.jsdelivr.net/npm/vue/dist/vue.js");
+    //     document.head.appendChild(Script);
+    // })
+  </script>

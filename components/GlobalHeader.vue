@@ -268,7 +268,7 @@ const resources = [
     href: '#',
   },
   { name: 'Истории клиентов', description: 'Примеры для вдохновения.', href: '#' },
-  { name: 'Вебинары', description: 'Бесплатное обучение работе.', href: '#' },
-  { name: 'Партнерская программа', description: 'Зарабатывайте вместе с нами.', href: '#' },
+  { name: 'Вебинары', description: 'Бесплатное обучение работе.', href: '/webinars' },
+  { name: 'Партнерская программа', description: 'Зарабатывайте вместе с нами.', href: '/partners/reseller' },
 ]
 </script>

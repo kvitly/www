@@ -9,6 +9,7 @@
     <footer>
       <GlobalFooter />
     </footer>
+    <GlobalChat></GlobalChat>
   </div>
 </template>
 

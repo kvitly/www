@@ -15,7 +15,7 @@
                 </a>
                 <div class="text-lg leading-6 font-medium space-y-1">
                   <h3>{{ video.name }}</h3>
-                  <a :href="video.url" target="_blank" class="block text-emerald-600">{{ video.title }}</a>
+                  <a :href="video.url" target="_blank" class="block text-emerald-500">{{ video.title }}</a>
                 </div>
                 <div class="text-sm">
                   <p class="text-gray-500">{{ video.description }}</p>

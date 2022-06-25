@@ -73,7 +73,7 @@
 import { defineComponent, h } from 'vue'
 
 const footer = {
-  tagline: "Making the world a better place through constructing elegant hierarchies.",
+  tagline: "Сервис, где есть всё для легкого старта и уверенного развития вашего бизнеса.",
   copyright: "© Сделано с 💚 в Беларуси, 2014—2022.",
   solutions: [
     { name: 'Веб-сайт', href: '/products/website' },
