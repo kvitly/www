@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <SectionHeroPage
-            :label="page.label"
-            :title="page.title"
-            :description="page.desciption">
-        </SectionHeroPage>
-        <SectionIntegrations></SectionIntegrations>
-    </div>
+  <div>
+    <SectionHeroPage
+      :label="page.label"
+      :title="page.title"
+      :description="page.desciption"
+    />
+    <SectionIntegrations />
+  </div>
 </template>
 
 <script setup>

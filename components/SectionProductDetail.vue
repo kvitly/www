@@ -20,16 +20,14 @@
           :description="feature.description"
           :featurelist="feature.featurelist"
           :image="feature.image"
-        >
-        </FeatureLeft>
+        />
         <FeatureRight
           v-else
           :title="feature.title"
           :description="feature.description"
           :featurelist="feature.featurelist"
           :image="feature.image"
-        >
-        </FeatureRight>
+        />
       </div>
     </div>
   </div>

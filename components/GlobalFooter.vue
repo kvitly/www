@@ -27,7 +27,7 @@
               </ul>
             </div>
             <div class=" md:mt-9 mt-4">
-              <ul role="list" class="mt-4 space-y-4">
+              <ul role="list" class="space-y-4">
                 <li v-for="item in footer.support" :key="item.name">
                   <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
                     {{ item.name }}
@@ -51,7 +51,7 @@
               <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Ресурсы</h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li v-for="item in footer.legal" :key="item.name">
-                  <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
+                  <a :href="item.href" :target="item.target" class="text-base text-gray-500 hover:text-gray-900">
                     {{ item.name }}
                   </a>
                 </li>
@@ -97,6 +97,7 @@ const footer = {
     { name: 'Справка', href: '#' },
     { name: 'Вебинары', href: '/webinars' },
     { name: 'Партнерам', href: '/partners/reseller' },
+    { name: 'Обновления', href: 'https://announcekit.app/staronka-2/obnovleniya', target: '_blank' },
   ],
   social: [
     {

@@ -4,41 +4,74 @@
     <Popover class="relative bg-white">
       <div class="flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-10">
         <div>
-          <a href="/" class="flex">
+          <a
+            href="/"
+            class="flex"
+          >
             <span class="sr-only">kvitly</span>
-            <img class="w-auto h-14" src="~/assets/kvitly.svg" alt="" />
+            <img
+              class="w-auto h-14"
+              src="~/assets/kvitly.svg"
+              alt=""
+            >
           </a>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500"
+          >
             <span class="sr-only">Open menu</span>
-            <MenuIcon class="h-6 w-6" aria-hidden="true" />
+            <MenuIcon
+              class="h-6 w-6"
+              aria-hidden="true"
+            />
           </PopoverButton>
         </div>
+        <!-- Menu (md+) -->
         <div class="hidden md:flex-1 md:flex md:items-center md:justify-between">
-          <PopoverGroup as="nav" class="flex space-x-10">
-            <Popover class="relative" v-slot="{ open }">
+          <PopoverGroup
+            as="nav"
+            class="flex space-x-10"
+          >
+            <Popover
+              v-slot="{ open }"
+              class="relative"
+            >
               <PopoverButton
-                :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500']">
+                :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500']"
+              >
                 <span>Возможности</span>
                 <ChevronDownIcon
                   :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']"
-                  aria-hidden="true" />
+                  aria-hidden="true"
+                />
               </PopoverButton>
 
-              <transition enter-active-class="transition ease-out duration-200"
-                enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0"
-                leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0"
-                leave-to-class="opacity-0 translate-y-1">
+              <transition
+                enter-active-class="transition ease-out duration-200"
+                enter-from-class="opacity-0 translate-y-1"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition ease-in duration-150"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 translate-y-1"
+              >
                 <PopoverPanel class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-3xl">
                   <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                      <a v-for="item in solutions" :key="item.name" :href="item.href"
-                        class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                      <a
+                        v-for="item in solutions"
+                        :key="item.name"
+                        :href="item.href"
+                        class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      >
                         <div
-                          class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12">
-                          <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                          class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12"
+                        >
+                          <component
+                            :is="item.icon"
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                          />
                         </div>
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">
@@ -51,10 +84,18 @@
                       </a>
                     </div>
                     <div class="p-5 bg-gray-50 sm:p-8">
-                      <a :href="integrations.href" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100">
+                      <a
+                        :href="integrations.href"
+                        class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-100"
+                      >
                         <div
-                          class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12">
-                          <component :is="integrations.icon" class="h-6 w-6" aria-hidden="true" />
+                          class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12"
+                        >
+                          <component
+                            :is="integrations.icon"
+                            class="h-6 w-6"
+                            aria-hidden="true"
+                          />
                         </div>
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">
@@ -65,48 +106,54 @@
                           </p>
                         </div>
                       </a>
-                      <!-- class="-m-3 p-3 flow-root rounded-md hover:bg-gray-100">
-                                                  <div
-                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white sm:h-12 sm:w-12">
-                            <component :is="MailIcon" class="h-6 w-6" aria-hidden="true" />
-                          </div>
-                        <div class="flex items-center">
-                          <div class="text-base font-medium text-gray-900">Интеграции со сторонними сервисами</div>
-                          <span
-                            class="ml-3 inline-flex items-center px-3 py-0.5 rounded-full text-xs font-medium leading-5 bg-emerald-100 text-emerald-800">
-                            Super </span>
-                        </div>
-                        <p class="mt-1 text-sm text-gray-500">Подключение десятков сервисов для упрощения ежедневной
-                          работы
-                        </p>
-                      </a> -->
                     </div>
                   </div>
                 </PopoverPanel>
               </transition>
             </Popover>
-            <a href="/plans" class="text-base font-medium text-gray-500 hover:text-gray-900"> Тарифы </a>
-            <a href="/blog" class="text-base font-medium text-gray-500 hover:text-gray-900"> Блог </a>
+            <a
+              href="/plans"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            > Тарифы </a>
+            <a
+              href="/blog"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            > Блог </a>
 
-            <Popover class="relative" v-slot="{ open }">
+            <Popover
+              v-slot="{ open }"
+              class="relative"
+            >
               <PopoverButton
-                :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500']">
+                :class="[open ? 'text-gray-900' : 'text-gray-500', 'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500']"
+              >
                 <span>Ресурсы</span>
                 <ChevronDownIcon
                   :class="[open ? 'text-gray-600' : 'text-gray-400', 'ml-2 h-5 w-5 group-hover:text-gray-500']"
-                  aria-hidden="true" />
+                  aria-hidden="true"
+                />
               </PopoverButton>
 
-              <transition enter-active-class="transition ease-out duration-200"
-                enter-from-class="opacity-0 translate-y-1" enter-to-class="opacity-100 translate-y-0"
-                leave-active-class="transition ease-in duration-150" leave-from-class="opacity-100 translate-y-0"
-                leave-to-class="opacity-0 translate-y-1">
+              <transition
+                enter-active-class="transition ease-out duration-200"
+                enter-from-class="opacity-0 translate-y-1"
+                enter-to-class="opacity-100 translate-y-0"
+                leave-active-class="transition ease-in duration-150"
+                leave-from-class="opacity-100 translate-y-0"
+                leave-to-class="opacity-0 translate-y-1"
+              >
                 <PopoverPanel
-                  class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0">
+                  class="absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0"
+                >
                   <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                      <a v-for="item in resources" :key="item.name" :href="item.href"
-                        class="-m-3 p-3 block rounded-md hover:bg-gray-50">
+                      <a
+                        v-for="item in resources"
+                        :key="item.name"
+                        :href="item.href"
+                        :target="item.target"
+                        class="-m-3 p-3 block rounded-md hover:bg-gray-50"
+                      >
                         <p class="text-base font-medium text-gray-900">
                           {{ item.name }}
                         </p>
@@ -119,51 +166,93 @@
                 </PopoverPanel>
               </transition>
             </Popover>
+
+            <a
+              href="/about"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            > О нас </a>
           </PopoverGroup>
           <div class="flex items-center md:ml-12">
-            <a href="/app/login" class="text-base font-medium text-gray-500 hover:text-gray-900">Войти</a>
-            <a href="/app/signup"
-              class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">
+            <a
+              href="/app/login"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            >Войти</a>
+            <a
+              href="/app/signup"
+              class="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700"
+            >
               Попробовать бесплатно </a>
           </div>
         </div>
       </div>
 
-      <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95"
-        enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in"
-        leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
-        <PopoverPanel focus class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      <transition
+        enter-active-class="duration-200 ease-out"
+        enter-from-class="opacity-0 scale-95"
+        enter-to-class="opacity-100 scale-100"
+        leave-active-class="duration-100 ease-in"
+        leave-from-class="opacity-100 scale-100"
+        leave-to-class="opacity-0 scale-95"
+      >
+        <PopoverPanel
+          focus
+          class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        >
           <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div class="pt-5 pb-6 px-5">
               <div class="flex items-center justify-between">
                 <div>
-                  <img class="w-auto h-14" src="~/assets/kvitly.svg" alt="kvitly" />
+                  <img
+                    class="w-auto h-14"
+                    src="~/assets/kvitly.svg"
+                    alt="kvitly"
+                  >
                 </div>
                 <div class="-mr-2">
                   <PopoverButton
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500">
+                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500"
+                  >
                     <span class="sr-only">Close menu</span>
-                    <XIcon class="h-6 w-6" aria-hidden="true" />
+                    <XIcon
+                      class="h-6 w-6"
+                      aria-hidden="true"
+                    />
                   </PopoverButton>
                 </div>
               </div>
               <div class="mt-6">
                 <nav class="grid gap-6">
-                  <a v-for="item in solutions" :key="item.name" :href="item.href"
-                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                  <a
+                    v-for="item in solutionsMobile"
+                    :key="item.name"
+                    :href="item.href"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                  >
                     <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white">
-                      <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
+                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white"
+                    >
+                      <component
+                        :is="item.icon"
+                        class="h-6 w-6"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div class="ml-4 text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>
                   </a>
-                  <a :href="integrations.href"
-                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                  <a
+                    :href="integrations.href"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                  >
                     <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white">
-                      <component :is="integrations.icon" class="h-6 w-6" aria-hidden="true" />
+                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-emerald-500 text-white"
+                    >
+                      <component
+                        :is="integrations.icon"
+                        class="h-6 w-6"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div class="ml-4 text-base font-medium text-gray-900">
                       {{ integrations.name }}
@@ -174,23 +263,43 @@
             </div>
             <div class="py-6 px-5">
               <div class="grid grid-cols-2 gap-4">
-                <a href="/plans" class="text-base font-medium text-gray-900 hover:text-gray-700"> Тарифы </a>
+                <a
+                  href="/plans"
+                  class="text-base font-medium text-gray-900 hover:text-gray-700"
+                > Тарифы </a>
 
-                <a href="/blog" class="text-base font-medium text-gray-900 hover:text-gray-700"> Блог </a>
+                <a
+                  href="/blog"
+                  class="text-base font-medium text-gray-900 hover:text-gray-700"
+                > Блог </a>
 
-                <a v-for="item in resources" :key="item.name" :href="item.href"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700">
+                <a
+                  v-for="item in resources"
+                  :key="item.name"
+                  :href="item.href"
+                  class="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
                   {{ item.name }}
                 </a>
+
+                <a
+                  href="/about"
+                  class="text-base font-medium text-gray-900 hover:text-gray-700"
+                > О нас </a>
               </div>
               <div class="mt-6">
-                <a href="/app/signup"
-                  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700">
+                <a
+                  href="/app/signup"
+                  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-emerald-600 hover:bg-emerald-700"
+                >
                   Попробовать бесплатно </a>
                 <p class="mt-6 text-center text-base font-medium text-gray-500">
                   Уже регистрировались?
                   {{ ' ' }}
-                  <a href="/app/login" class="text-emerald-600 hover:text-emerald-500"> Войти </a>
+                  <a
+                    href="/app/login"
+                    class="text-emerald-600 hover:text-emerald-500"
+                  > Войти </a>
                 </p>
               </div>
             </div>
@@ -224,22 +333,16 @@ const solutions = [
     icon: DesktopComputerIcon,
   },
   {
-    name: 'Лендинг',
-    description: 'Одностраничные сайты для продвижения продуктов и услуг',
-    href: '/products/landing',
-    icon: DocumentIcon,
-  },
-  {
-    name: 'Интернет-магазин',
-    description: "Решение для онлайн-продаж и управления каталогом",
-    href: '/products/ecommerce',
-    icon: ShoppingCartIcon
-  },
-  {
     name: 'Платежи',
     description: 'Простое подключение сервисов для приема платежей онлайн',
     href: '/products/payments',
     icon: CreditCardIcon,
+  },
+  {
+    name: 'Лендинг',
+    description: 'Одностраничные сайты для продвижения продуктов и услуг',
+    href: '/products/landing',
+    icon: DocumentIcon,
   },
   {
     name: 'Рассылки',
@@ -248,8 +351,46 @@ const solutions = [
     icon: MailIcon,
   },
   {
+    name: 'Интернет-магазин',
+    description: "Решение для онлайн-продаж и управления каталогом",
+    href: '/products/ecommerce',
+    icon: ShoppingCartIcon
+  },
+  {
     name: 'CRM-система',
     description: 'Сервис для комфортного управления заказами и контактами',
+    href: '/products/crm',
+    icon: UsersIcon,
+  },
+]
+const solutionsMobile = [
+  {
+    name: 'Веб-сайт',
+    href: '/products/website',
+    icon: DesktopComputerIcon,
+  },
+  {
+    name: 'Лендинг',
+    href: '/products/landing',
+    icon: DocumentIcon,
+  },
+  {
+    name: 'Интернет-магазин',
+    href: '/products/ecommerce',
+    icon: ShoppingCartIcon
+  },
+  {
+    name: 'Платежи',
+    href: '/products/payments',
+    icon: CreditCardIcon,
+  },
+  {
+    name: 'Рассылки',
+    href: '/products/email',
+    icon: MailIcon,
+  },
+  {
+    name: 'CRM-система',
     href: '/products/crm',
     icon: UsersIcon,
   },
@@ -262,13 +403,9 @@ const integrations = {
 };
 
 const resources = [
-  {
-    name: 'Справка',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-  },
-  { name: 'Истории клиентов', description: 'Примеры для вдохновения.', href: '#' },
-  { name: 'Вебинары', description: 'Бесплатное обучение работе.', href: '/webinars' },
-  { name: 'Партнерская программа', description: 'Зарабатывайте вместе с нами.', href: '/partners/reseller' },
+  { name: 'База знаний', description: 'Ответы на частые вопросы о работе с нашим сервисом.', href: '#' },
+  { name: 'Вебинары', description: 'Серия видео о работе с 🌱kvitly и развитии бизнеса.', href: '/webinars' },
+  { name: 'Партнерская программа', description: 'Помогаете бизнесам расти? Давайте делать это вместе!', href: '/partners/reseller' },
+  { name: 'Обновления', description: 'Новости о свежих релизах и новых возможностях.', href: 'https://announcekit.app/staronka-2/obnovleniya', target: '_blank' },
 ]
 </script>

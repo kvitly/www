@@ -1,15 +1,15 @@
 <template>
-    <div>
-        <SectionHeroPage
-            :label="page.label"
-            :title="page.title"
-            :description="page.desciption">
-        </SectionHeroPage>
-        <SectionResellerFeatures></SectionResellerFeatures>
-        <SectionResellerWho></SectionResellerWho>
-        <SectionResellerFaq></SectionResellerFaq>
-        <SectionResellerCta></SectionResellerCta>
-    </div>
+  <div>
+    <SectionHeroPage
+      :label="page.label"
+      :title="page.title"
+      :description="page.desciption"
+    />
+    <SectionResellerFeatures />
+    <SectionResellerWho />
+    <SectionResellerFaq />
+    <SectionResellerCta />
+  </div>
 </template>
 
 <script setup>

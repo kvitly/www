@@ -1,24 +1,24 @@
 <template>
-    <div>
-        <SectionHeroPage
-            :label="page.label"
-            :title="page.title"
-            :description="page.description">
-        </SectionHeroPage>
-        <div class="py-8 relative bg-white">
-          <SectionWebinarsList
-              :title="webinars.kvitly.title"
-              :description="webinars.kvitly.description"
-              :videos="webinars.kvitly.videos">
-          </SectionWebinarsList>
-          <SectionWebinarsList
-              :title="webinars.marketing.title"
-              :description="webinars.marketing.description"
-              :videos="webinars.marketing.videos">
-          </SectionWebinarsList>
-          </div>
-        <SectionWebinarsCta></SectionWebinarsCta>
+  <div>
+    <SectionHeroPage
+      :label="page.label"
+      :title="page.title"
+      :description="page.description"
+    />
+    <div class="py-8 relative bg-white">
+      <SectionWebinarsList
+        :title="webinars.kvitly.title"
+        :description="webinars.kvitly.description"
+        :videos="webinars.kvitly.videos"
+      />
+      <SectionWebinarsList
+        :title="webinars.marketing.title"
+        :description="webinars.marketing.description"
+        :videos="webinars.marketing.videos"
+      />
     </div>
+    <SectionWebinarsCta />
+  </div>
 </template>
 
 <script setup>

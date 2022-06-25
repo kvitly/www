@@ -18,7 +18,8 @@
         {{ props.description }}
       </p>
 
-      <dl v-if="props.featurelist" class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:gap-x-8">
+      <dl v-if="props.featurelist"
+        class="mt-12 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:gap-x-8">
         <div v-for="item in props.checklist" :key="item.id" class="relative">
           <dt>
             <CheckIcon class="absolute h-6 w-6 text-green-500" aria-hidden="true" />
@@ -44,8 +45,12 @@
         </div>
       </dl>
 
-      <div v-if="props.button" class="my-16">
-        <a :href="props.button.href"
+      <div 
+        v-if="props.button" 
+        class="my-16"
+      >
+        <a 
+          :href="props.button.href"
           class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200">
           {{ props.button.title }}
         </a>
@@ -63,8 +68,7 @@
         </defs>
         <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
       </svg>
-      <img class="relative mx-auto" width="490" :src="props.image.src"
-        :alt="props.image.alt" />
+      <img class="relative mx-auto" width="490" :src="props.image.src" :alt="props.image.alt" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="lg:py-24">
+  <div class="lg:pt-24">
     <SectionPlansFeaturesMobile
       :tiers="props.tiers"
       :features="props.features">
