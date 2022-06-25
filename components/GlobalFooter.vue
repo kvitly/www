@@ -26,8 +26,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-12 md:mt-0">
-              <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">&nbsp;</h3>
+            <div class=" md:mt-9 mt-4">
               <ul role="list" class="mt-4 space-y-4">
                 <li v-for="item in footer.support" :key="item.name">
                   <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
@@ -96,8 +95,8 @@ const footer = {
   ],
   legal: [
     { name: 'Справка', href: '#' },
-    { name: 'Вебинары', href: '#' },
-    { name: 'Партнерам', href: '#' },
+    { name: 'Вебинары', href: '/webinars' },
+    { name: 'Партнерам', href: '/partners/reseller' },
   ],
   social: [
     {

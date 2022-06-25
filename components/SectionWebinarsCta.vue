@@ -8,10 +8,10 @@
       </h2>
       <div class="mt-8 flex justify-center">
         <div class="inline-flex rounded-md shadow">
-          <a href="https://www.youtube.com/c/staronkaby/featured" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">Попробовать бесплатно </a>
+          <a href="/app/signup" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700">Попробовать бесплатно </a>
         </div>
         <div class="ml-3 inline-flex">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200"> Перейти в YouTube-канал</a>
+          <a href="https://www.youtube.com/c/staronkaby/featured" target="_blank" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200"> Перейти в YouTube-канал</a>
         </div>
       </div>
     </div>

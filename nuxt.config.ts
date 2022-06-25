@@ -8,6 +8,6 @@ export default defineNuxtConfig({
         transpile: ['@headlessui/vue'],
     },
     app: {
-        baseURL: '/www/',
+        // baseURL: '/www/',
     }
 })
